@@ -98,6 +98,15 @@
 import { reactive } from 'vue'
 // import { availableIcons, categoryConfig, colorPalette } from '../lib/appData'
 
+interface AppForm {
+  name: string
+  description?: string
+  url: string
+  icon: string
+  category: string
+  color: string
+}
+
 // 임시로 직접 정의
 const availableIcons = [
   '💻', '📱', '🎮', '🛒', '📊', '📚', '🎵', '🏃‍♂️', '🍔', '🧰'
@@ -121,21 +130,12 @@ const colorPalette = [
   '#f44336', '#00bcd4', '#8bc34a', '#ff5722', '#607d8b'
 ]
 
-interface App {
-  name: string
-  description?: string  // 선택사항으로 변경
-  url: string
-  icon: string
-  category: string
-  color: string
-}
-
 const emit = defineEmits<{
   close: []
-  'add-app': [app: App]
+  'add-app': [app: AppForm]
 }>()
 
-const form = reactive<App>({
+const form = reactive<AppForm>({
   name: '',
   description: '',
   url: '',
