@@ -75,7 +75,7 @@ const defaultApps = [
 
 interface AppForm {
   name: string
-  description: string
+  description?: string
   url: string
   icon: string
   category: string
