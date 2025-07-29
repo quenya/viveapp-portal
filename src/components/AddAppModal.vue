@@ -139,7 +139,7 @@ const form = reactive<AppForm>({
   name: '',
   description: '',
   url: '',
-  icon: '�',
+  icon: '',
   category: '',
   color: '#2196f3'
 })
