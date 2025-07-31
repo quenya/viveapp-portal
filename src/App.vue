@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="header">
-      <h1 class="title">🌟 ViveApp Portal</h1>
+      <h1 class="title">VIBE WebApp 포털</h1>
       <p class="subtitle">당신의 모든 웹앱에 쉽게 접근하세요</p>
     </header>
     
